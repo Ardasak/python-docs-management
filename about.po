@@ -18,17 +18,14 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 
 #: about.rst:3
-#, fuzzy
 msgid "About these documents"
-msgstr "Bu belgeler hakkında"
+msgstr ""
 
 #: about.rst:6
 msgid ""
 "These documents are generated from `reStructuredText`_ sources by `Sphinx`_,"
 " a document processor specifically written for the Python documentation."
 msgstr ""
-"Bu belgeler, Python belgeleri için özel olarak yazılmış bir belge işlemcisi "
-"olan `Sphinx`_ tarafından `reStructuredText`_ kaynaklarından üretilir."
 
 #: about.rst:15
 #, fuzzy
@@ -38,10 +35,6 @@ msgid ""
 "look at the :ref:`reporting-bugs` page for information on how to do so.  New"
 " volunteers are always welcome!"
 msgstr ""
-"Belgelerin ve araç zincirinin geliştirilmesi, Python'un kendisi gibi tamamen"
-" gönüllü bir çabadır.  Eğer katkıda bulunmak istiyorsanız, nasıl yapılacağı "
-"hakkında bilgi için lütfen :ref:`reporting-bugs` sayfasına bir göz atın.  "
-"Yeni gönüllülere her zaman açığız!"
 
 #: about.rst:20
 #, fuzzy

@@ -279,7 +279,6 @@ class TranslationWindow(QWidget):
                 self.id_list_widget.addItem(QListWidgetItem(entry.msgid))
                 self.tr_list_widget.addItem(QListWidgetItem(entry.msgstr))
 
-            self.id_list_widget.setCurrentRow(0)
         else:
             self.tr_text_edit.setEnabled(False)
 
@@ -296,7 +295,6 @@ class TranslationWindow(QWidget):
 
         # If user selects a .po file, load it using polib
         if self.last_opened_file[0].endswith(".po"):
-            print("not none")
             self.pofile = polib.pofile(self.last_opened_file[0])
             parser.set("SETTINGS", "last_opened_file", self.last_opened_file[0])
             save_changes()
@@ -323,7 +321,6 @@ class TranslationWindow(QWidget):
     def translate_file(self):
         """Translate all entries in the .po file"""
         for index, entry in enumerate(self.pofile):
-
             if self.fuzzy_checkbox.isChecked():
                 if not "fuzzy" in entry.flags:
                     continue
