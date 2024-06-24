@@ -16,7 +16,7 @@ class Styles:
         QLabel {background-color:rgba(0,0,0,0%); color: rgb(255, 255, 255)}
     """
 
-    dark_mode_button_style = """
+    light_button_style = """
         QPushButton {
             width: 150px;
             background-color: #2E2E2E;
@@ -37,7 +37,7 @@ class Styles:
         }
     """
 
-    light_mode_button_style = """
+    dark_button_style = """
         QPushButton {
             width: 150px;
             background-color: #FFFFFF;
@@ -57,3 +57,80 @@ class Styles:
             border: 2px solid #AAAAAA;
         }
     """
+
+    list_widget_style = """
+            QListWidget {
+                background-color: #f0f0f0;
+                border: 1px solid #c0c0c0;
+                border-radius: 5px;
+            }
+            
+            QListWidget::item {
+                background-color: #ffffff;
+                padding: 10px;
+                margin-bottom: 5px;
+                border-radius: 3px;
+            }
+            
+            QListWidget::item:selected {
+                background-color: #a0c0ff;
+                color: #ffffff;
+            }
+
+            QScrollBar {
+                background-color: #FFFFFF;
+            }
+
+            QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+                background: gray;
+                min-height: 20px;
+            }
+
+            QScrollBar::add-line:vertical, QScrollBar::add-line:horizontal {
+                background: none;
+                border: none;
+                height: 0px;
+                subcontrol-position: bottom;
+                subcontrol-origin: margin;
+            }
+
+            QScrollBar::sub-line:vertical, QScrollBar::sub-line:horizontal {
+                background: none;
+                border: none;
+                height: 0px;
+                subcontrol-position: top;
+                subcontrol-origin: margin;
+            }
+        """
+
+    text_edit_style = """           
+            QTextEdit {
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+                padding: 10px;
+                font-size: 14px;
+            }"""
+
+    checkbox_style = """QCheckBox {
+                spacing: 5px;
+                font-size: 14px;
+                color: #ffffff; /* White text color */
+            }
+            QCheckBox::indicator {
+                width: 20px;
+                height: 20px;
+                border: 2px solid #ccc; /* Default border */
+                background-color: #fff; /* Default background */
+            }
+            QCheckBox::indicator:checked {
+                background-color: #007bff; /* Blue background when checked */
+                border: 2px solid #007bff; /* Blue border when checked */
+            }
+            QCheckBox::indicator:checked:hover {
+                background-color: #0056b3; /* Darker blue on hover */
+                border: 2px solid #0056b3;
+            }
+            QCheckBox::indicator:checked:pressed {
+                background-color: #003d80; /* Even darker blue when pressed */
+                border: 2px solid #003d80;
+            }"""
